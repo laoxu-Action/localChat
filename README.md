@@ -14,6 +14,10 @@ Lightweight LAN chat application built with Electron and Vue 3. It focuses on fa
 - Configurable nickname and download directory
 - Smooth drag overlay with flicker-free handling
 
+## Preview
+
+<img src="./src/renderer/src/assets/1.png" alt="App preview" width="900" />
+
 ## Requirements
 
 - Node.js 18+
@@ -56,13 +60,6 @@ Lightweight LAN chat application built with Electron and Vue 3. It focuses on fa
 - Nickname:
   - Renderer syncs nickname to main (`lan:set-nickname`), and sending always uses latest `lan.nick`
 
-Code references:
-
-- Renderer drag drop and upload paths: `src/renderer/src/App.vue:499`
-- Clipboard paste image (renderer + main): `src/renderer/src/App.vue:300`, `src/main/index.js:500`
-- Path-based upload handler (main): `src/main/index.js:341`
-- Nickname sync & send: `src/renderer/src/App.vue:120`, `src/renderer/src/App.vue:274`, `src/main/index.js:279`
-- Open download directory: `src/main/index.js:511`, `src/renderer/src/App.vue:61`
 
 ## Notes & Limitations
 
@@ -88,6 +85,7 @@ Code references:
 - 下载进度与完成后的“打开目录”快捷入口
 - 可配置昵称与下载目录
 - 防闪烁的拖拽遮罩与稳定的事件处理
+
 
 ## 环境要求
 
@@ -131,13 +129,7 @@ Code references:
 - 昵称：
   - 渲染层监听并同步昵称到主进程（`lan:set-nickname`），消息始终使用最新 `lan.nick`
 
-代码位置参考：
 
-- 渲染层拖拽与路径上传：`src/renderer/src/App.vue:499`
-- 粘贴图片（渲染层 + 主进程）：`src/renderer/src/App.vue:300`、`src/main/index.js:500`
-- 主进程路径上传处理：`src/main/index.js:341`
-- 昵称同步与发送：`src/renderer/src/App.vue:120`、`src/renderer/src/App.vue:274`、`src/main/index.js:279`
-- 打开下载目录：`src/main/index.js:511`、`src/renderer/src/App.vue:61`
 
 ## 注意事项
 
